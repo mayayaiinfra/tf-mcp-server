@@ -1,0 +1,48 @@
+{
+  "name": "@thunderfire/mcp-server",
+  "version": "1.0.0",
+  "description": "THUNDERFIRE autonomous node management via Model Context Protocol. Manage nodes, CHITRAL health, marketplace, THETA decisions from any MCP client.",
+  "keywords": ["mcp", "thunderfire", "autonomous", "iot", "robotics", "nodes", "chitral", "theta", "nop"],
+  "license": "MIT",
+  "author": "MAYAYAI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mayayai/tf-mcp-server"
+  },
+  "homepage": "https://mayayai.com/thunderfire",
+  "bugs": {
+    "url": "https://github.com/mayayai/tf-mcp-server/issues"
+  },
+  "bin": {
+    "thunderfire-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

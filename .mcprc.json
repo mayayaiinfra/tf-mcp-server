@@ -1,0 +1,37 @@
+{
+  "name": "@thunderfire/mcp-server",
+  "display_name": "THUNDERFIRE — Autonomous Node Management",
+  "description": "Manage autonomous nodes, CHITRAL health, marketplace modules, THETA decisions, and NOP services. The TCP/IP of Physical Autonomy.",
+  "icon_url": "https://mayayai.com/thunderfire-icon.png",
+  "categories": ["iot", "robotics", "autonomous-systems", "ai-agents"],
+  "transport": ["stdio"],
+  "tools_count": 16,
+  "resources_count": 3,
+  "prompts_count": 2,
+  "homepage": "https://mayayai.com/thunderfire",
+  "repository": "https://github.com/mayayai/tf-mcp-server",
+  "author": "MAYAYAI",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "thunderfire",
+    "autonomous",
+    "iot",
+    "robotics",
+    "nodes",
+    "chitral",
+    "theta",
+    "nop",
+    "edge",
+    "ai-agents"
+  ],
+  "installation": {
+    "npx": "npx @thunderfire/mcp-server",
+    "pip": "pip install thunderfire-mcp && thunderfire-mcp",
+    "docker": "docker run thunderfire/mcp-server"
+  },
+  "configuration": {
+    "required": ["THUNDERFIRE_API_KEY"],
+    "optional": ["THUNDERFIRE_API_URL", "THUNDERFIRE_TIMEOUT"]
+  }
+}
