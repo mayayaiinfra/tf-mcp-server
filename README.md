@@ -1,5 +1,10 @@
 # @thunderfire/mcp-server
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![npm](https://img.shields.io/badge/npm-@thunderfire/mcp--server-CB3837.svg)](https://npmjs.com/package/@thunderfire/mcp-server)
+[![MCP](https://img.shields.io/badge/MCP-1.0-blueviolet.svg)](https://modelcontextprotocol.io)
+[![Tools](https://img.shields.io/badge/tools-16-brightgreen.svg)](README.md#tools)
+
 THUNDERFIRE autonomous node management via Model Context Protocol (MCP). Manage nodes, CHITRAL health, marketplace modules, THETA decisions, and NOP services from any MCP-compatible AI client.
 
 ## Features
